@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 6rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 5rem;
+    width: 5rem;
+    margin-left: auto;
+}
+
+nav h1 {
+    color: #000;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.form,
+.message,
+body,
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+}
+
+.container {
+    height: 430px;
+    background: #fff;
+    position: relative;
+    display: grid;
+    grid-template: 100%/50% 50%;
+    box-shadow: 0px 0px 20px 5px rgba(106, 106, 106, 0.2);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.heading2 {
+    padding: 10px;
+}
+
+p {
+    padding: 0;
+}
+
+.noAccount {
+    width: 250px;
+}
+
+.message {
+    position: absolute;
+    background: #fff;
+    width: 50%;
+    height: 100%;
+    transform: translateX(100%);
+    border-radius: 20px;
+
+}
+
+.message:before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 70%;
+    background: #E2F2FD;
+    opacity: 0;
+    left: 0;
+    top: 15%;
+}
+
+.button {
+    margin: 5px 0;
+}
+
+
+
+.btn-wrapper {
+    width: 70%;
+    /* text-align: justify; */
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+}
+
+.form--heading {
+    font-size: 25px;
+    height: 50px;
+    color: #000;
+    font-weight: 600;
+    /* margin-top: 100px; */
+}
+
+.heading2 {
+    font-weight: 400;
+    font-size: small;
+    margin-left: 40px;
+}
+
+form {
+    width: 70%;
+}
+
+form>* {
+    margin: 10px;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    font-size: 25px;
+    font-weight: 300;
+    color: #E2F2FD;
+    letter-spacing: .11em;
+}
+
+input::placeholder {
+    color: #333;
+    font-size: 12px;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    background: #65A9E8;
+    font-family: "Source Sans Pro", sans-serif;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+.button:hover {
+    background-color: #65A9E8;
+    color: #fff;
+}
+
+a {
+    color: #65A9E8;
+    text-decoration: none;
+    transition: color .3s;
+    font-size: 13px;
+}
+
+.form-input-container {
+    display: flex;
+    align-items: center;
+    background-color: #E2F2FD;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-input-container input {
+    background-color: #E2F2FD;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    outline: 0;
+}
+
+@media screen and (max-width:768px) {
+
+    .container,
+    .message {
+        width: 100%;
+        float: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .container {
+        grid-template: auto/1fr;
+        height: auto;
+        border-radius: 0;
+        width: 100%;
+        max-width: none;
+    }
+
+    .message {
+        transform: none;
+        position: static;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        background-color: #f0f0f0;
+        width: 100%;
+    }
+
+    .form {
+        border-right: none;
+    }
+
+    nav {
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    nav h1 {
+        font-size: 1.2rem;
+    }
+}
+
+/* CSS for forgot_pass */
+.hide {
+    display: none;
+}
